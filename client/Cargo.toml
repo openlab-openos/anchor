@@ -23,6 +23,6 @@ serde = { version = "1", features = ["derive"] }
 solana-account-decoder = "1.17.3"
 solana-client = "1.17.3"
 solana-sdk = "1.17.3"
-thiserror = "1"
+thiserror = "1.0.58"
 tokio = { version = "1", features = ["rt", "sync"] }
 url = "2"
