@@ -21,5 +21,5 @@ anchor-lang = { path = "../../../../lang" }
 anchor-spl = { path = "../../../../spl", features = ["metadata"] }
 spl-token = { version = "3.2",  features = ["no-entrypoint"] }
 spl-associated-token-account = { version = "1.1.1", features = ["no-entrypoint"] }
-thiserror = "1.0"
+thiserror = "1.0.58"
 arrayref = "0.3.6"
