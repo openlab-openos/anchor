@@ -496,7 +496,7 @@ pub fn gen_idl_type(
                 use crate::parser::context::CrateContext;
                 use quote::ToTokens;
 
-                let source_path = proc_macro2::Span::call_site().source_path();
+                let source_path = proc_macro2::Span::call_site().source().path();
                 let lib_path = find_path("lib.rs", &source_path).expect("lib.rs should exist");
 
                 if let Ok(ctx) = CrateContext::parse(lib_path) {
