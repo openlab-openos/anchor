@@ -20,9 +20,9 @@ anyhow = "1"
 futures = "0.3"
 regex = "1"
 serde = { version = "1", features = ["derive"] }
-solana-account-decoder = "1.17.3"
-solana-client = "1.17.3"
-solana-sdk = "1.17.3"
+solana-account-decoder = { git = "https://github.com/openlab-openos/openos" ,package="solana-account-decoder" }
+solana-client = { git = "https://github.com/openlab-openos/openos" ,package="solana-client" }
+solana-sdk = { git = "https://github.com/openlab-openos/openos" ,package="solana-sdk" }
 thiserror = "1.0.58"
 tokio = { version = "1", features = ["rt", "sync"] }
 url = "2"

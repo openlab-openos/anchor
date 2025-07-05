@@ -208,8 +208,8 @@ dependencies = [
  "solana-cli-config",
  "solana-client",
  "solana-faucet",
- "solana-program",
- "solana-sdk",
+ "solana-program 1.17.28",
+ "solana-sdk 1.17.28",
  "solang-parser",
  "syn 1.0.109",
  "tar",
@@ -228,7 +228,7 @@ dependencies = [
  "serde",
  "solana-account-decoder",
  "solana-client",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
  "tokio",
  "url",
@@ -283,7 +283,7 @@ dependencies = [
  "borsh 0.10.3",
  "bytemuck",
  "getrandom 0.2.10",
- "solana-program",
+ "solana-program 1.17.28",
  "thiserror",
 ]
 
@@ -316,13 +316,13 @@ dependencies = [
  "borsh 0.10.3",
  "mpl-token-metadata",
  "serum_dex",
- "spl-associated-token-account 2.3.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-memo 4.0.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-pod 0.1.0",
- "spl-token 4.0.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-token-2022 2.0.0",
- "spl-token-group-interface 0.1.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-token-metadata-interface 0.2.0 (git+https://github.com/openlab-openos/open-token.git)",
+ "spl-associated-token-account",
+ "spl-memo",
+ "spl-pod",
+ "spl-token 4.0.0",
+ "spl-token-2022",
+ "spl-token-group-interface",
+ "spl-token-metadata-interface",
 ]
 
 [[package]]
@@ -1390,15 +1390,12 @@ dependencies = [
 
 [[package]]
 name = "dashmap"
-version = "5.5.3"
+version = "4.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "978747c1d849a7d2ee5e8adc0159961c48fb7e5db2f06af6723b80123bb53856"
+checksum = "e77a43b28d0668df09411cb0bc9a8c2adc40f9a048afe863e05fd43251e8e39c"
 dependencies = [
  "cfg-if",
- "hashbrown 0.14.1",
- "lock_api",
- "once_cell",
- "parking_lot_core",
+ "num_cpus",
 ]
 
 [[package]]
@@ -2550,7 +2547,7 @@ dependencies = [
  "borsh 0.10.3",
  "num-derive 0.3.3",
  "num-traits",
- "solana-program",
+ "solana-program 1.18.17",
  "thiserror",
 ]
 
@@ -3727,7 +3724,7 @@ dependencies = [
  "num_enum 0.5.11",
  "safe-transmute",
  "serde",
- "solana-program",
+ "solana-program 1.18.17",
  "spl-token 3.5.0",
  "static_assertions",
  "thiserror",
@@ -3874,9 +3871,8 @@ dependencies = [
 
 [[package]]
 name = "solana-account-decoder"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4973213a11c2e1b924b36e0c6688682b5aa4623f8d4eeaa1204c32cee524e6d6"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "Inflector",
  "base64 0.21.7",
@@ -3888,26 +3884,25 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "solana-config-program",
- "solana-sdk",
- "spl-token 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-token-2022 1.0.0",
- "spl-token-group-interface 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-token-metadata-interface 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "solana-sdk 1.17.28",
+ "spl-token 4.0.0",
+ "spl-token-2022",
+ "spl-token-group-interface",
+ "spl-token-metadata-interface",
  "thiserror",
  "zstd",
 ]
 
 [[package]]
 name = "solana-clap-utils"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "909f4553d0b31bb5b97533a6b64cc321a4eace9112d6efbabcf4408ea1b3f1db"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "chrono",
  "clap 2.34.0",
  "rpassword",
  "solana-remote-wallet",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
  "tiny-bip39",
  "uriparse",
@@ -3916,9 +3911,8 @@ dependencies = [
 
 [[package]]
 name = "solana-cli-config"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2242c4a0776cdaec1358d0ffc61b32131985a7b2210c491fa465d28c313eb880"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "dirs-next",
  "lazy_static",
@@ -3926,15 +3920,14 @@ dependencies = [
  "serde_derive",
  "serde_yaml",
  "solana-clap-utils",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "url",
 ]
 
 [[package]]
 name = "solana-client"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c5cc431df6cc1dd964134fa4ec7df765d3af3fae9c2148f96a3c4fb500290633"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "async-trait",
  "bincode",
@@ -3954,7 +3947,7 @@ dependencies = [
  "solana-rpc-client",
  "solana-rpc-client-api",
  "solana-rpc-client-nonce-utils",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana-streamer",
  "solana-thin-client",
  "solana-tpu-client",
@@ -3965,23 +3958,21 @@ dependencies = [
 
 [[package]]
 name = "solana-config-program"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e38b040d3a42e8f7d80c4a86bb0d49d7aed663b56b0fe0ae135d2d145fb7ae3a"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "bincode",
  "chrono",
  "serde",
  "serde_derive",
  "solana-program-runtime",
- "solana-sdk",
+ "solana-sdk 1.17.28",
 ]
 
 [[package]]
 name = "solana-connection-cache"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae02622c63943485f0af3d0896626eaf6478e734f0b6bc61c7cc5320963c6e75"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "async-trait",
  "bincode",
@@ -3994,16 +3985,15 @@ dependencies = [
  "rcgen",
  "solana-measure",
  "solana-metrics",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
  "tokio",
 ]
 
 [[package]]
 name = "solana-faucet"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6fb2e8702fea7c9549d4e946c9b30894f99c94778d80cc8a669d8fdccb131ce3"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "bincode",
  "byteorder",
@@ -4014,13 +4004,42 @@ dependencies = [
  "serde_derive",
  "solana-clap-utils",
  "solana-cli-config",
- "solana-logger",
+ "solana-logger 1.17.28",
  "solana-metrics",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana-version",
- "spl-memo 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "spl-memo",
  "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "solana-frozen-abi"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
+dependencies = [
+ "ahash 0.8.11",
+ "blake3",
+ "block-buffer 0.10.4",
+ "bs58 0.4.0",
+ "bv",
+ "byteorder",
+ "cc",
+ "either",
+ "generic-array",
+ "im",
+ "lazy_static",
+ "log",
+ "memmap2",
+ "rustc_version",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "serde_json",
+ "sha2 0.10.8",
+ "solana-frozen-abi-macro 1.17.28",
+ "subtle",
+ "thiserror",
 ]
 
 [[package]]
@@ -4043,9 +4062,20 @@ dependencies = [
  "serde_bytes",
  "serde_derive",
  "sha2 0.10.8",
- "solana-frozen-abi-macro",
+ "solana-frozen-abi-macro 1.18.17",
  "subtle",
  "thiserror",
+]
+
+[[package]]
+name = "solana-frozen-abi-macro"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "rustc_version",
+ "syn 2.0.55",
 ]
 
 [[package]]
@@ -4062,6 +4092,16 @@ dependencies = [
 
 [[package]]
 name = "solana-logger"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
+dependencies = [
+ "env_logger",
+ "lazy_static",
+ "log",
+]
+
+[[package]]
+name = "solana-logger"
 version = "1.18.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a0511082fc62f2d086520fff5aa1917c389d8c840930c08ad255ae05952c08a2"
@@ -4073,34 +4113,31 @@ dependencies = [
 
 [[package]]
 name = "solana-measure"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "be55a3df105431d25f86f2a7da0cbbde5f54c1f0782ca59367ea4a8037bc6797"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "log",
- "solana-sdk",
+ "solana-sdk 1.17.28",
 ]
 
 [[package]]
 name = "solana-metrics"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ddec097ed7572804389195128dbd57958b427829153c6cd8ec3343c86fe3cd22"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "crossbeam-channel",
  "gethostname",
  "lazy_static",
  "log",
  "reqwest",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
 ]
 
 [[package]]
 name = "solana-net-utils"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "258fa7c29fb7605b8d2ed89aa0d43c640d14f4147ad1f5b3fdad19a1ac145ca5"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "bincode",
  "clap 3.2.25",
@@ -4111,8 +4148,8 @@ dependencies = [
  "serde",
  "serde_derive",
  "socket2 0.5.6",
- "solana-logger",
- "solana-sdk",
+ "solana-logger 1.17.28",
+ "solana-sdk 1.17.28",
  "solana-version",
  "tokio",
  "url",
@@ -4120,9 +4157,8 @@ dependencies = [
 
 [[package]]
 name = "solana-perf"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ca422edcf16a6e64003ca118575ea641f7b750f14a0ad28c71dd84f33dcb912a"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "ahash 0.8.11",
  "bincode",
@@ -4139,12 +4175,65 @@ dependencies = [
  "rayon",
  "rustc_version",
  "serde",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
+ "solana-frozen-abi 1.17.28",
+ "solana-frozen-abi-macro 1.17.28",
  "solana-metrics",
  "solana-rayon-threadlimit",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana-vote-program",
+]
+
+[[package]]
+name = "solana-program"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
+dependencies = [
+ "ark-bn254",
+ "ark-ec",
+ "ark-ff",
+ "ark-serialize",
+ "base64 0.21.7",
+ "bincode",
+ "bitflags 2.5.0",
+ "blake3",
+ "borsh 0.10.3",
+ "borsh 0.9.3",
+ "bs58 0.4.0",
+ "bv",
+ "bytemuck",
+ "cc",
+ "console_error_panic_hook",
+ "console_log",
+ "curve25519-dalek",
+ "getrandom 0.2.10",
+ "itertools 0.10.5",
+ "js-sys",
+ "lazy_static",
+ "libc",
+ "libsecp256k1",
+ "light-poseidon",
+ "log",
+ "memoffset 0.9.0",
+ "num-bigint 0.4.4",
+ "num-derive 0.3.3",
+ "num-traits",
+ "parking_lot",
+ "rand 0.8.5",
+ "rustc_version",
+ "rustversion",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "serde_json",
+ "sha2 0.10.8",
+ "sha3 0.10.8",
+ "solana-frozen-abi 1.17.28",
+ "solana-frozen-abi-macro 1.17.28",
+ "solana-sdk-macro 1.17.28",
+ "thiserror",
+ "tiny-bip39",
+ "wasm-bindgen",
+ "zeroize",
 ]
 
 [[package]]
@@ -4193,9 +4282,9 @@ dependencies = [
  "serde_json",
  "sha2 0.10.8",
  "sha3 0.10.8",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-sdk-macro",
+ "solana-frozen-abi 1.18.17",
+ "solana-frozen-abi-macro 1.18.17",
+ "solana-sdk-macro 1.18.17",
  "thiserror",
  "tiny-bip39",
  "wasm-bindgen",
@@ -4204,9 +4293,8 @@ dependencies = [
 
 [[package]]
 name = "solana-program-runtime"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bf373c3da0387f47fee4c5ed2465a9628b9db026a62211a692a9285aa9251544"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "base64 0.21.7",
  "bincode",
@@ -4215,26 +4303,25 @@ dependencies = [
  "itertools 0.10.5",
  "libc",
  "log",
- "num-derive 0.4.0",
+ "num-derive 0.3.3",
  "num-traits",
  "percentage",
  "rand 0.8.5",
  "rustc_version",
  "serde",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
+ "solana-frozen-abi 1.17.28",
+ "solana-frozen-abi-macro 1.17.28",
  "solana-measure",
  "solana-metrics",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana_rbpf",
  "thiserror",
 ]
 
 [[package]]
 name = "solana-pubsub-client"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97b9abc76168d19927561db6a3685b98752bd0961b4ce4f8b7f85ee12238c017"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "crossbeam-channel",
  "futures-util",
@@ -4246,7 +4333,7 @@ dependencies = [
  "serde_json",
  "solana-account-decoder",
  "solana-rpc-client-api",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
  "tokio",
  "tokio-stream",
@@ -4257,9 +4344,8 @@ dependencies = [
 
 [[package]]
 name = "solana-quic-client"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7952c5306a0be5f5276448cd20246b31265bfa884f29a077a24303c6a16aeb34"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "async-mutex",
  "async-trait",
@@ -4276,7 +4362,7 @@ dependencies = [
  "solana-metrics",
  "solana-net-utils",
  "solana-rpc-client-api",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana-streamer",
  "thiserror",
  "tokio",
@@ -4284,9 +4370,8 @@ dependencies = [
 
 [[package]]
 name = "solana-rayon-threadlimit"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a4fa0cc66f8e73d769bca2ede3012ba2ef8ab67963e832808665369f2cf81743"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "lazy_static",
  "num_cpus",
@@ -4294,28 +4379,26 @@ dependencies = [
 
 [[package]]
 name = "solana-remote-wallet"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "289803796d4ff7b4699504d3ab9e9d9c5205ea3892b2ebe397b377494dbd75d4"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "console",
  "dialoguer",
  "log",
- "num-derive 0.4.0",
+ "num-derive 0.3.3",
  "num-traits",
  "parking_lot",
  "qstring",
  "semver",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
  "uriparse",
 ]
 
 [[package]]
 name = "solana-rpc-client"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6cb55a08018776a62ecff52139fbcdab1a7baa4e8f077202be58156e8dde4d5f"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "async-trait",
  "base64 0.21.7",
@@ -4330,7 +4413,7 @@ dependencies = [
  "serde_json",
  "solana-account-decoder",
  "solana-rpc-client-api",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana-transaction-status",
  "solana-version",
  "solana-vote-program",
@@ -4339,9 +4422,8 @@ dependencies = [
 
 [[package]]
 name = "solana-rpc-client-api"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "72a8403038f4d6ab65bc7e7afb3afe8d9824c592232553c5cef55cf3de36025d"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "base64 0.21.7",
  "bs58 0.4.0",
@@ -4352,24 +4434,76 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "solana-account-decoder",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana-transaction-status",
  "solana-version",
- "spl-token-2022 1.0.0",
+ "spl-token-2022",
  "thiserror",
 ]
 
 [[package]]
 name = "solana-rpc-client-nonce-utils"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4caca735caf76d51c074c3bacbfe38094bf7f92cfbe7b5b13f3bc4946e64f889"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "clap 2.34.0",
  "solana-clap-utils",
  "solana-rpc-client",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
+]
+
+[[package]]
+name = "solana-sdk"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
+dependencies = [
+ "assert_matches",
+ "base64 0.21.7",
+ "bincode",
+ "bitflags 2.5.0",
+ "borsh 0.10.3",
+ "bs58 0.4.0",
+ "bytemuck",
+ "byteorder",
+ "chrono",
+ "derivation-path",
+ "digest 0.10.7",
+ "ed25519-dalek",
+ "ed25519-dalek-bip32",
+ "generic-array",
+ "hmac 0.12.1",
+ "itertools 0.10.5",
+ "js-sys",
+ "lazy_static",
+ "libsecp256k1",
+ "log",
+ "memmap2",
+ "num-derive 0.3.3",
+ "num-traits",
+ "num_enum 0.6.1",
+ "pbkdf2 0.11.0",
+ "qstring",
+ "qualifier_attr",
+ "rand 0.7.3",
+ "rand 0.8.5",
+ "rustc_version",
+ "rustversion",
+ "serde",
+ "serde_bytes",
+ "serde_derive",
+ "serde_json",
+ "serde_with",
+ "sha2 0.10.8",
+ "sha3 0.10.8",
+ "solana-frozen-abi 1.17.28",
+ "solana-frozen-abi-macro 1.17.28",
+ "solana-logger 1.17.28",
+ "solana-program 1.17.28",
+ "solana-sdk-macro 1.17.28",
+ "thiserror",
+ "uriparse",
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -4417,14 +4551,26 @@ dependencies = [
  "sha2 0.10.8",
  "sha3 0.10.8",
  "siphasher",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-logger",
- "solana-program",
- "solana-sdk-macro",
+ "solana-frozen-abi 1.18.17",
+ "solana-frozen-abi-macro 1.18.17",
+ "solana-logger 1.18.17",
+ "solana-program 1.18.17",
+ "solana-sdk-macro 1.18.17",
  "thiserror",
  "uriparse",
  "wasm-bindgen",
+]
+
+[[package]]
+name = "solana-sdk-macro"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
+dependencies = [
+ "bs58 0.4.0",
+ "proc-macro2",
+ "quote",
+ "rustversion",
+ "syn 2.0.55",
 ]
 
 [[package]]
@@ -4448,9 +4594,8 @@ checksum = "468aa43b7edb1f9b7b7b686d5c3aeb6630dc1708e86e31343499dd5c4d775183"
 
 [[package]]
 name = "solana-streamer"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fad1bdb955ec6d23a1dbf87e403ff3e610d68616275693125a893d7ed4b2d323"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "async-channel",
  "bytes",
@@ -4470,10 +4615,9 @@ dependencies = [
  "rand 0.8.5",
  "rcgen",
  "rustls",
- "smallvec",
  "solana-metrics",
  "solana-perf",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
  "tokio",
  "x509-parser",
@@ -4481,9 +4625,8 @@ dependencies = [
 
 [[package]]
 name = "solana-thin-client"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc301310ba0755c449a8800136f67f8ad14419b366404629894cd10021495360"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "bincode",
  "log",
@@ -4491,14 +4634,13 @@ dependencies = [
  "solana-connection-cache",
  "solana-rpc-client",
  "solana-rpc-client-api",
- "solana-sdk",
+ "solana-sdk 1.17.28",
 ]
 
 [[package]]
 name = "solana-tpu-client"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fb887bd5078ff015e103e9ee54a6713380590efa8ff1804b3a653f07188928c6"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "async-trait",
  "bincode",
@@ -4513,16 +4655,15 @@ dependencies = [
  "solana-pubsub-client",
  "solana-rpc-client",
  "solana-rpc-client-api",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
  "tokio",
 ]
 
 [[package]]
 name = "solana-transaction-status"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4a0cdfdf63192fb60de094fae8e81159e4e3e9aac9659fe3f9ef0e707023fb32"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "Inflector",
  "base64 0.21.7",
@@ -4535,24 +4676,23 @@ dependencies = [
  "serde_derive",
  "serde_json",
  "solana-account-decoder",
- "solana-sdk",
- "spl-associated-token-account 2.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-memo 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-token 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-token-2022 1.0.0",
+ "solana-sdk 1.17.28",
+ "spl-associated-token-account",
+ "spl-memo",
+ "spl-token 4.0.0",
+ "spl-token-2022",
  "thiserror",
 ]
 
 [[package]]
 name = "solana-udp-client"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ea0d6d8d66e36371577f51c4d1d6192a66f1fa4efe7161a36d94677640dcadb"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "async-trait",
  "solana-connection-cache",
  "solana-net-utils",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "solana-streamer",
  "thiserror",
  "tokio",
@@ -4560,39 +4700,37 @@ dependencies = [
 
 [[package]]
 name = "solana-version"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6f4c2f531c22ce806b211118be8928a791425f97de4592371fb57b246ed33e34"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "log",
  "rustc_version",
  "semver",
  "serde",
  "serde_derive",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
- "solana-sdk",
+ "solana-frozen-abi 1.17.28",
+ "solana-frozen-abi-macro 1.17.28",
+ "solana-sdk 1.17.28",
 ]
 
 [[package]]
 name = "solana-vote-program"
-version = "1.18.17"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6d8a6486017e71a3714a8e1a635e17209135cc20535ba9808ccf106d80ff6e8b"
+version = "1.17.28"
+source = "git+https://github.com/openlab-openos/openos#1f803bd917f8afb2dd2a71905b21a21740da94b9"
 dependencies = [
  "bincode",
  "log",
- "num-derive 0.4.0",
+ "num-derive 0.3.3",
  "num-traits",
  "rustc_version",
  "serde",
  "serde_derive",
- "solana-frozen-abi",
- "solana-frozen-abi-macro",
+ "solana-frozen-abi 1.17.28",
+ "solana-frozen-abi-macro 1.17.28",
  "solana-metrics",
- "solana-program",
+ "solana-program 1.17.28",
  "solana-program-runtime",
- "solana-sdk",
+ "solana-sdk 1.17.28",
  "thiserror",
 ]
 
@@ -4618,8 +4756,8 @@ dependencies = [
  "serde",
  "serde_json",
  "sha3 0.9.1",
- "solana-program",
- "solana-sdk",
+ "solana-program 1.18.17",
+ "solana-sdk 1.18.17",
  "subtle",
  "thiserror",
  "zeroize",
@@ -4627,9 +4765,9 @@ dependencies = [
 
 [[package]]
 name = "solana_rbpf"
-version = "0.8.0"
+version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3d457cc2ba742c120492a64b7fa60e22c575e891f6b55039f4d736568fb112a3"
+checksum = "da5d083187e3b3f453e140f292c09186881da8a02a7b5e27f645ee26de3d9cc5"
 dependencies = [
  "byteorder",
  "combine",
@@ -4683,43 +4821,16 @@ dependencies = [
 [[package]]
 name = "spl-associated-token-account"
 version = "2.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "992d9c64c2564cc8f63a4b508bf3ebcdf2254b0429b13cd1d31adb6162432a5f"
-dependencies = [
- "assert_matches",
- "borsh 0.10.3",
- "num-derive 0.4.0",
- "num-traits",
- "solana-program",
- "spl-token 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-token-2022 1.0.0",
- "thiserror",
-]
-
-[[package]]
-name = "spl-associated-token-account"
-version = "2.3.0"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
  "assert_matches",
  "borsh 0.10.3",
  "num-derive 0.4.0",
  "num-traits",
- "solana-program",
- "spl-token 4.0.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-token-2022 2.0.0",
+ "solana-program 1.18.17",
+ "spl-token 4.0.0",
+ "spl-token-2022",
  "thiserror",
-]
-
-[[package]]
-name = "spl-discriminator"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cce5d563b58ef1bb2cdbbfe0dfb9ffdc24903b10ae6a4df2d8f425ece375033f"
-dependencies = [
- "bytemuck",
- "solana-program",
- "spl-discriminator-derive 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -4728,19 +4839,8 @@ version = "0.1.0"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
  "bytemuck",
- "solana-program",
- "spl-discriminator-derive 0.1.1 (git+https://github.com/openlab-openos/open-token.git)",
-]
-
-[[package]]
-name = "spl-discriminator-derive"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fadbefec4f3c678215ca72bd71862697bb06b41fd77c0088902dd3203354387b"
-dependencies = [
- "quote",
- "spl-discriminator-syn 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "syn 2.0.55",
+ "solana-program 1.18.17",
+ "spl-discriminator-derive",
 ]
 
 [[package]]
@@ -4749,21 +4849,8 @@ version = "0.1.1"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
  "quote",
- "spl-discriminator-syn 0.1.1 (git+https://github.com/openlab-openos/open-token.git)",
+ "spl-discriminator-syn",
  "syn 2.0.55",
-]
-
-[[package]]
-name = "spl-discriminator-syn"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e5f2044ca42c8938d54d1255ce599c79a1ffd86b677dfab695caa20f9ffc3f2"
-dependencies = [
- "proc-macro2",
- "quote",
- "sha2 0.10.8",
- "syn 2.0.55",
- "thiserror",
 ]
 
 [[package]]
@@ -4781,18 +4868,9 @@ dependencies = [
 [[package]]
 name = "spl-memo"
 version = "4.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f0f180b03318c3dbab3ef4e1e4d46d5211ae3c780940dd0a28695aba4b59a75a"
-dependencies = [
- "solana-program",
-]
-
-[[package]]
-name = "spl-memo"
-version = "4.0.0"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
- "solana-program",
+ "solana-program 1.18.17",
 ]
 
 [[package]]
@@ -4802,35 +4880,9 @@ source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e
 dependencies = [
  "borsh 0.10.3",
  "bytemuck",
- "solana-program",
+ "solana-program 1.18.17",
  "solana-zk-token-sdk",
- "spl-program-error 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
-]
-
-[[package]]
-name = "spl-pod"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "85a5db7e4efb1107b0b8e52a13f035437cdcb36ef99c58f6d467f089d9b2915a"
-dependencies = [
- "borsh 0.10.3",
- "bytemuck",
- "solana-program",
- "solana-zk-token-sdk",
- "spl-program-error 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "spl-program-error"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "249e0318493b6bcf27ae9902600566c689b7dfba9f1bdff5893e92253374e78c"
-dependencies = [
- "num-derive 0.4.0",
- "num-traits",
- "solana-program",
- "spl-program-error-derive 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "thiserror",
+ "spl-program-error",
 ]
 
 [[package]]
@@ -4840,21 +4892,9 @@ source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e
 dependencies = [
  "num-derive 0.4.0",
  "num-traits",
- "solana-program",
- "spl-program-error-derive 0.3.1 (git+https://github.com/openlab-openos/open-token.git)",
+ "solana-program 1.18.17",
+ "spl-program-error-derive",
  "thiserror",
-]
-
-[[package]]
-name = "spl-program-error-derive"
-version = "0.3.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ab5269c8e868da17b6552ef35a51355a017bd8e0eae269c201fef830d35fa52c"
-dependencies = [
- "proc-macro2",
- "quote",
- "sha2 0.10.8",
- "syn 2.0.55",
 ]
 
 [[package]]
@@ -4871,28 +4911,14 @@ dependencies = [
 [[package]]
 name = "spl-tlv-account-resolution"
 version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "615d381f48ddd2bb3c57c7f7fb207591a2a05054639b18a62e785117dd7a8683"
-dependencies = [
- "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-pod 0.1.1",
- "spl-program-error 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-type-length-value 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "spl-tlv-account-resolution"
-version = "0.5.1"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
  "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-pod 0.1.0",
- "spl-program-error 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-type-length-value 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
+ "solana-program 1.18.17",
+ "spl-discriminator",
+ "spl-pod",
+ "spl-program-error",
+ "spl-type-length-value",
 ]
 
 [[package]]
@@ -4906,22 +4932,7 @@ dependencies = [
  "num-derive 0.3.3",
  "num-traits",
  "num_enum 0.5.11",
- "solana-program",
- "thiserror",
-]
-
-[[package]]
-name = "spl-token"
-version = "4.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "08459ba1b8f7c1020b4582c4edf0f5c7511a5e099a7a97570c9698d4f2337060"
-dependencies = [
- "arrayref",
- "bytemuck",
- "num-derive 0.3.3",
- "num-traits",
- "num_enum 0.6.1",
- "solana-program",
+ "solana-program 1.18.17",
  "thiserror",
 ]
 
@@ -4935,31 +4946,7 @@ dependencies = [
  "num-derive 0.4.0",
  "num-traits",
  "num_enum 0.7.2",
- "solana-program",
- "thiserror",
-]
-
-[[package]]
-name = "spl-token-2022"
-version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d697fac19fd74ff472dfcc13f0b442dd71403178ce1de7b5d16f83a33561c059"
-dependencies = [
- "arrayref",
- "bytemuck",
- "num-derive 0.4.0",
- "num-traits",
- "num_enum 0.7.2",
- "solana-program",
- "solana-security-txt",
- "solana-zk-token-sdk",
- "spl-memo 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-pod 0.1.1",
- "spl-token 4.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-token-group-interface 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-token-metadata-interface 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-transfer-hook-interface 0.4.1",
- "spl-type-length-value 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "solana-program 1.18.17",
  "thiserror",
 ]
 
@@ -4973,56 +4960,29 @@ dependencies = [
  "num-derive 0.4.0",
  "num-traits",
  "num_enum 0.7.2",
- "solana-program",
+ "solana-program 1.18.17",
  "solana-security-txt",
  "solana-zk-token-sdk",
- "spl-memo 4.0.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-pod 0.1.0",
- "spl-token 4.0.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-token-group-interface 0.1.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-token-metadata-interface 0.2.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-transfer-hook-interface 0.5.0",
- "spl-type-length-value 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
+ "spl-memo",
+ "spl-pod",
+ "spl-token 4.0.0",
+ "spl-token-group-interface",
+ "spl-token-metadata-interface",
+ "spl-transfer-hook-interface",
+ "spl-type-length-value",
  "thiserror",
 ]
 
 [[package]]
 name = "spl-token-group-interface"
 version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b889509d49fa74a4a033ca5dae6c2307e9e918122d97e58562f5c4ffa795c75d"
-dependencies = [
- "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-pod 0.1.1",
- "spl-program-error 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
-[[package]]
-name = "spl-token-group-interface"
-version = "0.1.0"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
  "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-pod 0.1.0",
- "spl-program-error 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
-]
-
-[[package]]
-name = "spl-token-metadata-interface"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c16ce3ba6979645fb7627aa1e435576172dd63088dc7848cb09aa331fa1fe4f"
-dependencies = [
- "borsh 0.10.3",
- "solana-program",
- "spl-discriminator 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-pod 0.1.1",
- "spl-program-error 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-type-length-value 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "solana-program 1.18.17",
+ "spl-discriminator",
+ "spl-pod",
+ "spl-program-error",
 ]
 
 [[package]]
@@ -5031,27 +4991,11 @@ version = "0.2.0"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
  "borsh 0.10.3",
- "solana-program",
- "spl-discriminator 0.1.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-pod 0.1.0",
- "spl-program-error 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-type-length-value 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
-]
-
-[[package]]
-name = "spl-transfer-hook-interface"
-version = "0.4.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7aabdb7c471566f6ddcee724beb8618449ea24b399e58d464d6b5bc7db550259"
-dependencies = [
- "arrayref",
- "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-pod 0.1.1",
- "spl-program-error 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-tlv-account-resolution 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-type-length-value 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "solana-program 1.18.17",
+ "spl-discriminator",
+ "spl-pod",
+ "spl-program-error",
+ "spl-type-length-value",
 ]
 
 [[package]]
@@ -5061,25 +5005,12 @@ source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e
 dependencies = [
  "arrayref",
  "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-pod 0.1.0",
- "spl-program-error 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-tlv-account-resolution 0.5.1 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-type-length-value 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
-]
-
-[[package]]
-name = "spl-type-length-value"
-version = "0.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a468e6f6371f9c69aae760186ea9f1a01c2908351b06a5e0026d21cfc4d7ecac"
-dependencies = [
- "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "spl-pod 0.1.1",
- "spl-program-error 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "solana-program 1.18.17",
+ "spl-discriminator",
+ "spl-pod",
+ "spl-program-error",
+ "spl-tlv-account-resolution",
+ "spl-type-length-value",
 ]
 
 [[package]]
@@ -5088,10 +5019,10 @@ version = "0.3.0"
 source = "git+https://github.com/openlab-openos/open-token.git#a0c9ab6685a605b0e01ff67d2351918979ee2c23"
 dependencies = [
  "bytemuck",
- "solana-program",
- "spl-discriminator 0.1.0 (git+https://github.com/openlab-openos/open-token.git)",
- "spl-pod 0.1.0",
- "spl-program-error 0.3.0 (git+https://github.com/openlab-openos/open-token.git)",
+ "solana-program 1.18.17",
+ "spl-discriminator",
+ "spl-pod",
+ "spl-program-error",
 ]
 
 [[package]]
