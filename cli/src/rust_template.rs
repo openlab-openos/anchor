@@ -192,11 +192,10 @@ no-log-ix-name = []
 idl-build = ["anchor-lang/idl-build"]
 
 [dependencies]
-anchor-lang = "{2}"
+anchor-lang = {{git="https://github.com/openlab-openos/anchor.git", package="anchor-lang"}}
 "#,
         name,
-        name.to_snake_case(),
-        VERSION,
+        name.to_snake_case()
     )
 }
 

@@ -944,6 +944,7 @@ fn init(
         },
     );
     cfg.programs.insert(Cluster::Localnet, localnet);
+    cfg.provider.cluster = Cluster::Devnet;
     let toml = cfg.to_string();
     fs::write("Anchor.toml", toml)?;
 
@@ -1022,7 +1023,7 @@ fn init(
         }
     }
 
-    println!("{project_name} initialized");
+    println!("{project_name} initialized..");
 
     Ok(())
 }
@@ -4108,8 +4109,8 @@ fn airdrop(cfg_override: &ConfigOverride) -> Result<()> {
 
 fn cluster(_cmd: ClusterCommand) -> Result<()> {
     println!("Cluster Endpoints:\n");
-    println!("* Mainnet - https://api.mainnet-beta.solana.com");
-    println!("* Devnet  - https://api.devnet.solana.com");
+    println!("* Mainnet - https://api.mainnet.openverse.network");
+    println!("* Devnet  - https://api.devnet.openverse.network");
     println!("* Testnet - https://api.testnet.solana.com");
     Ok(())
 }

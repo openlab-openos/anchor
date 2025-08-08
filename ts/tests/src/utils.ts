@@ -99,7 +99,7 @@ let hasBalance = false;
 export async function getProvider() {
   const kp = await loadKp();
   const ENDPOINT = "http://localhost:8899";
-  // const ENDPOINT = "https://api.devnet.solana.com";
+  // const ENDPOINT = "https://api.devnet.openverse.network";
   const conn = new Connection(ENDPOINT, {
     commitment: "confirmed",
   });

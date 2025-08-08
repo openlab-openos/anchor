@@ -1413,7 +1413,7 @@ macro_rules! home_path {
     };
 }
 
-home_path!(WalletPath, ".config/solana/id.json");
+home_path!(WalletPath, ".config/openos/id.json");
 
 #[cfg(test)]
 mod tests {

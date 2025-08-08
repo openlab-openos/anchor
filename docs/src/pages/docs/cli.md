@@ -87,8 +87,8 @@ This lists cluster endpoints:
 ```shell
 Cluster Endpoints:
 
-* Mainnet - https://api.mainnet-beta.solana.com
-* Devnet  - https://api.devnet.solana.com
+* Mainnet - https://api.mainnet.openverse.network
+* Devnet  - https://api.devnet.openverse.network
 * Testnet - https://api.testnet.solana.com
 ```
 
